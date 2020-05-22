@@ -64,7 +64,7 @@ def predictLinear():
     if output>=300:
         output=output/3.55;
     output = round(output, 2)
-    return render_template('Linear.html', prediction_text='PM2.5 = {} µg/m3'.format(output))
+    return render_template('Linear.html', prediction_text='AQI = {} '.format(output))
 
 @app.route('/predictANN',methods=['POST'])
 def predictANN():
@@ -87,7 +87,7 @@ def predictANN():
 
     output = round(prediction[0], 2)
 
-    return render_template('ANN.html', prediction_text='PM2.5 = {} µg/m3'.format(output))
+    return render_template('ANN.html', prediction_text='AQI = {} '.format(output))
 
 
 @app.route('/predictKNN',methods=['POST'])
@@ -111,7 +111,7 @@ def predictKNN():
 
     output = round(prediction[0], 2)
 
-    return render_template('KNN.html', prediction_text='PM2.5 = {} µg/m3'.format(output))
+    return render_template('KNN.html', prediction_text='AQI = {} '.format(output))
 
 
 @app.route('/predictDecision',methods=['POST'])
@@ -135,7 +135,7 @@ def predictDecision():
 
     output = abs(round(prediction[0], 2))
 
-    return render_template('Decision.html', prediction_text='PM2.5 = {} µg/m3'.format(output))
+    return render_template('Decision.html', prediction_text='AQI = {} '.format(output))
 
 @app.route('/predictRF',methods=['POST'])
 def predictRF():
@@ -158,7 +158,7 @@ def predictRF():
 
     output = abs(round(prediction[0], 2))
 
-    return render_template('RForest.html', prediction_text='PM2.5 = {} µg/m3'.format(output))
+    return render_template('RForest.html', prediction_text='AQI = {} '.format(output))
 
 @app.route('/predictLasso',methods=['POST'])
 def predictLasso():
@@ -181,18 +181,8 @@ def predictLasso():
 
     output = round(prediction[0], 2)
 
-    return render_template('Lasso.html', prediction_text='PM2.5 = {} µg/m3'.format(output))
+    return render_template('Lasso.html', prediction_text='AQI = {} '.format(output))
 
-# @app.route('/predict_api',methods=['POST'])
-# def predict_api():
-#     '''
-#     For direct API calls trought request
-#     '''
-#     data = request.get_json(force=True)
-#     prediction = model.predict([np.array(list(data.values()))])
-
-#     output = prediction[0]
-#     return jsonify(output)
 
 if __name__ == "__main__":
     app.run(debug=True)
