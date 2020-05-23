@@ -61,8 +61,8 @@ def predictLinear():
     final_features = [np.array(int_features)]
     prediction = model.predict(final_features)
     prediction1 = model1.predict(final_features)
-    output = abs(round(prediction[0], 2))
-    output1 = abs(round(prediction1[0], 2))
+    output = abs(round(prediction[0], 2))+0.42
+    output1 = abs(round(prediction1[0], 2))+0.17
     output = ((output+output1)/2)+1.69
     if output>=300:
         output=output/3.55;
