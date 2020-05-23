@@ -46,8 +46,8 @@ def predictLinear():
     '''
     For rendering results on HTML GUI
     '''
-    model = pickle.load(open('DecisionModel.pkl', 'rb'))
-    model1 = pickle.load(open('RFModel.pkl', 'rb'))
+    model = pickle.load(open('lr.pkl', 'rb'))
+    
     int_features =[]
     int_features.append(float(request.form['T']))
     int_features.append(float(request.form['TM']))
@@ -59,6 +59,7 @@ def predictLinear():
     int_features.append(float(request.form['VM']))
     # int_features = [float(x) for x in request.form.values()]
     final_features = [np.array(int_features)]
+    model1 = pickle.load(open('lr1.pkl', 'rb'))
     prediction = model.predict(final_features)
     prediction1 = model1.predict(final_features)
     output = abs(round(prediction[0], 2))+0.42
