@@ -1,13 +1,13 @@
 
 button
 {
-    margin-top: 15px;
-    margin-left: 14em;
+    margin-top: 12px;
+    margin-left: 19em;
     position: relative;
-    padding: 10px 20px;
+    padding: 8px 16px;
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     border: 2px solid #32a3b1;
-    font-size: 0.51em;
+    font-size: 0.41em;
     text-transform: initial;
     text-decoration: none;
     color:#475a6d;
@@ -15,11 +15,11 @@ button
 	background-clip: text;
 	-webkit-background-clip: text;
     color: transparent; */
-    font-weight: 900;
+    font-weight: 800;
     font-family: Luna;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     transition: 0.5s;
-    border-radius: 20px;
+    border-radius: 18px;
 }
 
 button:hover

@@ -14,6 +14,7 @@ body
   align-items: center;
   min-height: 100vh;
   background:#ebf5fc; 
+  overflow: hidden;
 }
 .container
 {
@@ -37,7 +38,7 @@ body
 .container .title h1
 {
 	font-family: Luna;
-	font-size: 20px;
+	font-size: 15px;
 	margin-top: 3%;
 	margin-bottom: 3%;
 	align-items: center;
@@ -63,8 +64,8 @@ background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8f
 .container .card
 {
 	width: 320px;
-	height: 497px;
-	margin: 20px;
+	height: 460px;
+	margin: 5px;
 	padding: 40px 30px;
 	background: #ebf5fc;
 	border-radius: 40px;
@@ -112,17 +113,18 @@ background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8f
 	margin-top: 2%;
 	word-spacing: 2px;
 	color: #32a3b1;
-	
+	font-size: 14px;
+	text-align: center;
 	/* font-family: 'Montserrat', sans-serif; */
 }
 .container .card .contentBx a
 {
 	display: inline-block;
-	padding: 10px 20px;
-	margin-top: 15px;
+	padding: 8px 16px;
+	margin-top: 7px;
 	border-radius: 40px;
 	color: #32a3b1;
-	font-size: 16px;
+	font-size: 14px;
 	text-decoration: none;
 	box-shadow: inset -4px -4px 15px rgba(255,255,255,1),4px 4px 15px rgba(0,0,0,0.1);
 }
