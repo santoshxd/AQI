@@ -29,7 +29,7 @@ Enter valid numerical values in all 8 input boxes.
 ![alt text](Screenshots/Enter_Details.png)
 After Enterting valid inputs into 8 input boxes hit Predict.
 ![alt text](Screenshots/Entered.png)
-If everything goes well, you should  be able to see the predcited AQI vaule on the HTML page!
+If everything goes well, you should  be able to see the predicted AQI vaule on the HTML page!
 ![alt text](Screenshots/Result.png)
 
 
