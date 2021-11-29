@@ -3,7 +3,7 @@
 You must have Scikit Learn, Pandas (for Machine Learning Model) and Flask (for API) installed.
 
 ### Project Structure
-This project has four major parts :
+
 1. model.py - This contains code fot our Machine Learning model to predict Air Quality Index absed on training data in 'RealCombile.csv' file.
 2. app.py - This contains Flask APIs that receives Air Quality details through API calls, computes the precited value based on our model and returns it.
 3. templates - This folder contains the HTML template to allow user to enter details regarding atmosphere and displays the predicted Air Quality Index.
